@@ -11,7 +11,7 @@
 
     <!-- Executive Dashboard Container -->
     <div class="executive-dashboard">
-
+    
     <!-- LOGIN CONTAINER -->
     <main id="loginContainer" class="hologram">
         <div class="bank-logo-wrapper">
@@ -21,20 +21,20 @@
         <!-- Top Management Header -->
         <header class="module-header">
             <div class="title-area">
-                <h2>EXECUTIVE DIRECTOR CONTROL CONSOLE</h2>
-                <p>Director: <strong>Mr. Seng Chhat</strong> • Huokaing Thara ISP & Bank System Infrastructure</p>
+                <h2>EXECUTIVE DIRECTOR CONTROL CONSOLE <span class="khmer-sub">/ កុងសូលគ្រប់គ្រងនាយកប្រតិបត្តិ</span></h2>
+                <p>Director: <strong>Mr. Seng Chhat (លោក សេង ឆាត)</strong> • Huokaing Thara ISP & Bank System Infrastructure</p>
             </div>
             <div class="action-buttons">
-                <button id="syncSystemBtn" class="btn-secondary" onclick="SengChhatPortal.syncNodes()">Synchronize Nodes</button>
-                <button id="voiceEnBtn" class="btn-voice" onclick="SengChhatPortal.speakAnnouncement('en')">🔊 Voice​​ in the meeting (EN)</button>
-                <button id="voiceKmBtn" class="btn-voice-km" onclick="SengChhatPortal.speakAnnouncement('km')">🔊 សំឡេង នៅក្នុងការប្រជុំ (KH)</button>
+                <button id="syncSystemBtn" class="btn-secondary" onclick="SengChhatPortal.syncNodes()">Synchronize / ធ្វើសមកាលកម្ម</button>
+                <button id="voiceEnBtn" class="btn-voice" onclick="SengChhatPortal.speakAnnouncement('en')">🔊 Voice (EN)</button>
+                <button id="voiceKmBtn" class="btn-voice-km" onclick="SengChhatPortal.speakAnnouncement('km')">🔊 សំឡេង (KH)</button>
             </div>
         </header>
 
         <!-- Executive Metrics Summary Row -->
         <section class="summary-row">
             <div class="summary-card gold">
-                <span class="card-label">Combined Institutional Capital & ISP Assets</span>
+                <span class="card-label">Combined Institutional Capital & ISP Assets / ទុនស្ថាប័ន និងទ្រព្យសកម្ម ISP សរុប</span>
                 <h2 id="displayDirectorCapital">$2,450,800,000.00</h2>
                 <div class="progress-bar-container"><div class="progress-bar" style="width: 92.5%;"></div></div>
             </div>
@@ -45,26 +45,26 @@
             
             <!-- ISP Network Status Panel -->
             <section class="data-panel">
-                <h3>Huokaing Thara ISP Core Nodes</h3>
+                <h3>Huokaing Thara ISP Core Nodes / ប្រព័ន្ធស្នូល ISP</h3>
                 <ul class="isp-node-list">
-                    <li><span>Bakong Gateway Hub</span> <span class="status-online">Operational</span></li>
-                    <li><span>Subsea Fiber Backbone</span> <span class="status-online">Optimal (99.99%)</span></li>
-                    <li><span>Enterprise DNS</span> <span class="status-online">Secure</span></li>
+                    <li><span>Bakong Gateway Hub / មជ្ឈមណ្ឌលបាគង</span> <span class="status-online">Operational / ដំណើរការ</span></li>
+                    <li><span>Subsea Fiber Backbone / ខ្សែកាបអុបទិកក្រោមសមុទ្រ</span> <span class="status-online">Optimal (99.99%)</span></li>
+                    <li><span>Enterprise DNS / ប្រព័ន្ធ DNS ហាងឆេង</span> <span class="status-online">Secure / សុវត្ថិភាព</span></li>
                 </ul>
             </section>
 
             <!-- Bank 1 & Bank 2 Oversight Ledger -->
             <section class="data-panel ledger-view">
-                <h3>Bank1 & Bank2 Cross-Network Queue</h3>
+                <h3>Bank1 & Bank2 Cross-Network Queue / ជួររង់ចាំឆ្លងបណ្តាញធនាគារ</h3>
                 <div class="table-responsive">
                     <table class="deposit-table">
                         <thead>
                             <tr>
-                                <th>Entity ID</th>
-                                <th>Network Node</th>
-                                <th>Routing Protocol</th>
-                                <th>Volume</th>
-                                <th>Status</th>
+                                <th>Entity ID / លេខសម្គាល់</th>
+                                <th>Network Node / ប្រព័ន្ធណូដ</th>
+                                <th>Routing Protocol / ប្រូតូកូល</th>
+                                <th>Volume / ទំហំទឹកប្រាក់</th>
+                                <th>Status / ស្ថានភាព</th>
                             </tr>
                         </thead>
                         <tbody id="executiveLogBody">
@@ -73,20 +73,21 @@
                                 <td>Huokaing Thara ISP</td>
                                 <td>BGP Uplink Tier-1</td>
                                 <td class="item-amount">$125,000.00</td>
-                                <td><span class="status-badge">Active</span></td>
+                                <td><span class="status-badge">Active / សកម្ម</span></td>
                             </tr>
                             <tr>
                                 <td>BANK-02</td>
-                                <td>Bank 2 Liquidity Pool</td>
-                                <td class="item-amount">SWIFT / Bakong</td>
+                                <td>Bank 2 Liquidity Pool / ធនាគារទី២</td>
+                                <td>SWIFT / Bakong</td>
                                 <td class="item-amount">$1,152,910,000.00</td>
-                                <td><span class="status-badge">Secured</span></td>
+                                <td><span class="status-badge">Secured / សុវត្ថិភាព</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
         </div>
+    </main>
     </div>
 
     <!-- Script Architecture Integration -->
