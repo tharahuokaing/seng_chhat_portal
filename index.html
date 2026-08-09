@@ -5,18 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Executive Portal | Mr. Seng Chhat - Huokaing Thara ISP & Bank Ecosystem</title>
     <link rel="stylesheet" href="seng_chhat_portal.css">
-    <link rel="icon" href="bank.jpg">
+    <link rel="icon" href="bank.jpg" type="image/jpeg">
 </head>
 <body>
 
     <!-- Executive Dashboard Container -->
     <div class="executive-dashboard">
-
-    <!-- LOGIN CONTAINER -->
-    <main id="loginContainer" class="hologram">
-        <div class="bank-logo-wrapper">
-            <img src="isp_announment.jpg" alt="Bank Logo" class="bank-logo-img">
-        </div>
         
         <!-- Top Management Header -->
         <header class="module-header">
@@ -25,7 +19,9 @@
                 <p>Director: <strong>Mr. Seng Chhat</strong> • Huokaing Thara ISP & Bank System Infrastructure</p>
             </div>
             <div class="action-buttons">
-                <button id="syncSystemBtn" class="btn-secondary" onclick="SengChhatPortal.syncNodes()">Synchronize All Nodes</button>
+                <button id="syncSystemBtn" class="btn-secondary" onclick="SengChhatPortal.syncNodes()">Synchronize Nodes</button>
+                <button id="voiceEnBtn" class="btn-voice" onclick="SengChhatPortal.speakAnnouncement('en')">🔊 AI Voice (EN)</button>
+                <button id="voiceKmBtn" class="btn-voice-km" onclick="SengChhatPortal.speakAnnouncement('km')">🔊 សំឡេង AI (KH)</button>
             </div>
         </header>
 
@@ -47,7 +43,7 @@
                 <ul class="isp-node-list">
                     <li><span>Bakong Gateway Hub</span> <span class="status-online">Operational</span></li>
                     <li><span>Subsea Fiber Backbone</span> <span class="status-online">Optimal (99.99%)</span></li>
-                    <li><span>Enterprise Enterprise DNS</span> <span class="status-online">Secure</span></li>
+                    <li><span>Enterprise DNS</span> <span class="status-online">Secure</span></li>
                 </ul>
             </section>
 
@@ -76,7 +72,7 @@
                             <tr>
                                 <td>BANK-02</td>
                                 <td>Bank 2 Liquidity Pool</td>
-                                <span>SWIFT / Bakong</span>
+                                <td class="item-amount">SWIFT / Bakong</td>
                                 <td class="item-amount">$1,152,910,000.00</td>
                                 <td><span class="status-badge">Secured</span></td>
                             </tr>
